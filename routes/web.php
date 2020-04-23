@@ -19,4 +19,6 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'AdminController@index')->name('home');
+Route::post('/create', 'AdminController@createRecord');
+Route::get('/detail/{id}', 'AdminController@detailRecord');
