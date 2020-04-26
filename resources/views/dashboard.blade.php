@@ -1,4 +1,7 @@
-@extends('layouts.sidebar')
+@extends('layouts.base')
+@section('title','Dashboard')
+@section('navbar_title','Persebaran Mahasiswa Penerima Bantuan')
 
-<body>
-</body>
+@section('content')
+
+@endsection

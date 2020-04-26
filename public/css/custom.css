@@ -1,3 +1,5 @@
+/* Sidebar */
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 *{
     margin: 0px;
@@ -55,6 +57,7 @@
 
 .wrapper .main-content{
     margin-left: 250px;
+    width: 100%;
 }
 .wrapper .main-content .header{
     padding: 20px;
@@ -66,3 +69,49 @@
     color: 7171717;
     line-height: 25px;
 }
+
+/* Steps */
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #bbbbbb;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+    color: #000;
+    font-size: 1.25rem;
+  }
+  
+  .step.active {
+    opacity: 1;
+    color: #fff;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    opacity: 0.75;
+    background-color: #4b4267;
+    color: #fff;
+  }
+
+  .btn-primary {
+      background: #4b4267;
+      border-color:#4b4267;
+  }
+  .btn-primary:hover {
+      background: #7e6da8;
+      border-color: #7e6da8;
+  }
+  .btn-secondary {
+      background: #999;
+      border-color: #999;
+  }
+  .btn-secondary:hover {
+      background: #bbb;
+      border-color: #bbb;
+  }
