@@ -20,5 +20,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'AdminController@index')->name('home');
-Route::post('/create', 'AdminController@createRecord');
-Route::get('/detail/{id}', 'AdminController@detailRecord');
+Route::post('/info-mahasiswa/post', 'InfoMahasiswaController@addInfoMahasiswa');
+Route::get('/info-mahasiswa/{id}', 'InfoMahasiswController@viewInfoMahasiswa');
