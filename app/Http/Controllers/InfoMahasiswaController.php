@@ -31,11 +31,11 @@ class InfoMahasiswaController extends Controller
 
         if($request->hasFile('pas_foto')){
             $name = Storage::disk('local')->put('images/pas_foto', $request->pas_foto);
-            $infoMahasiswa->pas_foto = $name;
+            $InfoMahasiswa->pas_foto = $name;
         }
         if($request->hasFile('transkrip')){
             $name = Storage::disk('local')->put('images/transkrip', $request->transkrip);
-            $infoMahasiswa->transkrip = $name;
+            $InfoMahasiswa->transkrip = $name;
         }
         $InfoMahasiswa->save();
         return $InfoMahasiswa;
