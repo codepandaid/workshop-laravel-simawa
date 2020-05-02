@@ -92,7 +92,6 @@
     color: #fff;
   }
   
-  /* Mark the steps that are finished and valid: */
   .step.finish {
     opacity: 0.75;
     background-color: #4b4267;
@@ -115,3 +114,24 @@
       background: #bbb;
       border-color: #bbb;
   }
+
+  .profile-image-input {
+      border-radius: 50%;
+      width: 100px; 
+      height: 100px; 
+      margin:auto;
+  }
+
+.custom-file-upload input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    background: #4b4267;
+    border: 1px solid #4b4267;
+    color: #fff;
+    border-radius:5px;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    margin-top: 0.5em;
+}

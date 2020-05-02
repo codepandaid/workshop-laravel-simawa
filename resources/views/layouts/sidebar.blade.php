@@ -15,13 +15,18 @@
         <div class="header">
             <h3>@yield('navbar_title')</h3>
             <div class="info">
-               
             </div>
         </div>
         <div class="content">
          @yield('content')
         </div>
+        <div class="text-center">
+            Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> Flaticon</a>
+        </div>
     </div>
+
+    
+
 </div>    
     
     

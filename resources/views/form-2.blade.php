@@ -8,9 +8,6 @@
 <div style="text-align:center;">
     <span class="step finish">1</span>
     <span class="step active">2</span>
-    <span class="step">3</span>
-    <span class="step">4</span>
-    <span class="step">5</span>
 </div>
 
 <div class="container">
