@@ -39,16 +39,14 @@ class InfoMahasiswaController extends Controller
         }
         $InfoMahasiswa->save();
         return $InfoMahasiswa;
-        // return redirect('/home');
     }
 
     public function viewInfoMahasiswa($id){
         $InfoMahasiswa = InfoMahasiswa::findOrFail($id);
         return $InfoMahasiswa;
-        // return view('info-mahasiswa');
     }
 
-    public function editInfoMahasiswa(Request $request){
+    public function editInfoMahasiswa(Request $request, $id){
     	$this->validate($request,[
             'nim'           => 'required',
             'nama_lengkap'  => 'required',
@@ -81,6 +79,12 @@ class InfoMahasiswaController extends Controller
             $infoMahasiswa->transkrip = $infoMahasiswa->transkrip;
         }
         $InfoMahasiswa->save();
+        return $InfoMahasiswa;
+    }
+
+    public function deleteInfoMahasiswa($id){
+        $InfoMahasiswa = InfoMahasiswa::findOrFail($id);
+        $InfoMahasiswa->delete();
         return redirect('/home');
     }
 }
