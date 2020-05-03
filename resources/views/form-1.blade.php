@@ -21,7 +21,7 @@
                     <img id="profile" src="{{asset('images/social.png')}}" class="profile-image-input mt-3"/><br>
                     <label class="custom-file-upload">
                         <input id="inputProfile" type="file" accept="image/*">
-                        <i class="fas fa-plus mr-2"></i> Tambah gambar
+                        <i class="fa fa-plus mr-2"></i> Tambah gambar
                     </label>
                     <div class="help-block with-errors"></div>
                 </div>
@@ -37,17 +37,28 @@
                 </div>
                 <div class="form-group">
                     <label for="fakultas">Fakultas</label>
-                    <input type="text" class="form-control" id="fakultas"  placeholder="Fakultas">
-                    <div class="help-block with-errors"></div>
+                    <select class="form-control" id="fakultas">
+                        <option value=""> Pilih salah satu </option>
+                        <option value="1">FMIPA</option>
+                        <option value="2">FEMA</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="departemen">Departemen</label>
-                    <input type="text" class="form-control" id="departemen"  placeholder="Departemen">
-                    <div class="help-block with-errors"></div>
+                    <select class="form-control" id="departemen">
+                        <option value=""> Pilih salah satu </option>
+                        <option value="1">Ilkom</option>
+                        <option value="2">STK</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="tahunmasuk">Tahun Masuk</label>
                     <input type="number" class="form-control" id="tahunmasuk"  placeholder="Tahun Masuk">
+                    <div class="help-block with-errors"></div>
+                </div>
+                <div class="form-group">
+                    <label for="ipk">IPK</label>
+                    <input type="number" class="form-control" id="ipk" placeholder="SPP Per Semester">
                     <div class="help-block with-errors"></div>
                 </div>
                 <div class="form-group">

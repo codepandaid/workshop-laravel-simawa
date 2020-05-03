@@ -11,30 +11,37 @@
             <h4 class="text-center">
                 Informasi Keluarga
             </h4>
-            <form>
+            <form method="POST" action="{{ url('edit-form-2/'.$InfoKeluarga->id) }}" >
+                @csrf
                 <div class="form-group">
                     <label for="namaayah">Nama Ayah Kandung</label>
-                    <input type="text" class="form-control" id="namaayah" value=""  placeholder="Nama Ayah Kandung">
+                    <input type="text" class="form-control" id="namaayah" value="{{$InfoKeluarga->nama_ayah}}" name="nama_ayah"  placeholder="Nama Ayah Kandung">
                 </div>
                 <div class="form-group">
                     <label for="namaibu">Nama Ibu Kandung</label>
-                    <input type="text" class="form-control" id="namaibu" value=""  placeholder="Nama Ibu Kandung">
+                    <input type="text" class="form-control" id="namaibu" value="{{$InfoKeluarga->nama_ibu}}" name="nama_ibu"  placeholder="Nama Ibu Kandung">
                 </div>
                 <div class="form-group">
                     <label for="pekerjaanayah">Pekerjaan Ayah</label>
-                    <input type="text" class="form-control" id="pekerjaanayah" value=""  placeholder="Pekerjaan Ayah">
+                    <select class="form-control" id="pekerjaanayah" name="pekerjaan_ayah">
+                    <option value="1" {{ $InfoKeluarga->pekerjaan_ayah == 1 ? 'selected' : '' }} >PNS</option>
+                        <option value="2" {{ $InfoKeluarga->pekerjaan_ayah == 2 ? 'selected' : '' }} >Dosen</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="pekerjaanibu">Pekerjaan Ibu</label>
-                    <input type="text" class="form-control" id="pekerjaanibu" value="" placeholder="Pekerjaan Ibu">
+                    <select class="form-control" id="pekerjaanibu" name="pekerjaan_ibu">
+                        <option value="1" {{ $InfoKeluarga->pekerjaan_ibu == 1 ? 'selected' : '' }} >PNS</option>
+                        <option value="2" {{ $InfoKeluarga->pekerjaan_ibu == 2 ? 'selected' : '' }} >Dosen</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="penghasilanayah">Penghasilan Ayah</label>
-                    <input type="number" class="form-control" id="penghasilanayah" value="" placeholder="Penghasilan Ayah">
+                    <input type="number" class="form-control" id="penghasilanayah" value="{{$InfoKeluarga->penghasilan_ayah}}" name="penghasilan_ayah" placeholder="Penghasilan Ayah">
                 </div>
                 <div class="form-group">
                     <label for="penghasilanibu">Penghasilan Ibu</label>
-                    <input type="number" class="form-control" id="penghasilanibu" value=""  placeholder="Penghasilan Ibu">
+                    <input type="number" class="form-control" id="penghasilanibu" value="{{$InfoKeluarga->penghasilan_ibu}}" name="penghasilan_ibu"  placeholder="Penghasilan Ibu">
                 </div>
 
                 <div class="mt-3" style="float:right">

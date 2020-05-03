@@ -51,7 +51,7 @@ class InfoKeluargaController extends Controller
         $InfoKeluarga->penghasilan_ibu  = $request->input('penghasilan_ibu');
         $InfoKeluarga->save();
 
-        return $InfoKeluarga;
+        return redirect('/dashboard');
     }
 
     public function deleteInfoKeluarga($id){

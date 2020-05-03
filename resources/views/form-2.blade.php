@@ -19,40 +19,45 @@
             <form>
                 <div class="form-group">
                     <label for="namaayah">Nama Ayah Kandung</label>
-                    <input type="text" class="form-control" id="namaayah"  placeholder="Nama Ayah Kandung">
+                    <input type="text" class="form-control" id="namaayah" placeholder="Nama Ayah Kandung">
                 </div>
                 <div class="form-group">
                     <label for="namaibu">Nama Ibu Kandung</label>
-                    <input type="text" class="form-control" id="namaibu"  placeholder="Nama Ibu Kandung">
+                    <input type="text" class="form-control" id="namaibu" placeholder="Nama Ibu Kandung">
                 </div>
                 <div class="form-group">
                     <label for="pekerjaanayah">Pekerjaan Ayah</label>
-                    <input type="text" class="form-control" id="pekerjaanayah"  placeholder="Pekerjaan Ayah">
+                    <select class="form-control" id="pekerjaanayah">
+                        <option value="">Pilih salah satu</option>
+                        <option value="1">PNS</option>
+                        <option value="2">Dosen</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="pekerjaanibu">Pekerjaan Ibu</label>
-                    <input type="text" class="form-control" id="pekerjaanibu"  placeholder="Pekerjaan Ibu">
+                    <select class="form-control" id="pekerjaanibu">
+                        <option value="">Pilih salah satu</option>
+                        <option value="1" >PNS</option>
+                        <option value="2" >Dosen</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="penghasilanayah">Penghasilan Ayah</label>
-                    <input type="number" class="form-control" id="penghasilanayah"  placeholder="Penghasilan Ayah">
+                    <input type="number" class="form-control" id="penghasilanayah" placeholder="Penghasilan Ayah">
                 </div>
                 <div class="form-group">
                     <label for="penghasilanibu">Penghasilan Ibu</label>
-                    <input type="number" class="form-control" id="penghasilanibu"  placeholder="Penghasilan Ibu">
+                    <input type="number" class="form-control" id="penghasilanibu" placeholder="Penghasilan Ibu">
                 </div>
 
                 <div class="mt-3" style="float:right">
                     <a href="" class="btn btn-secondary">Sebelumnya</a>
-                    <button type="submit" class="btn btn-primary">Selanjutnya</button>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
                 </div>
-                
+
             </form>
         </div>
     </div>
 </div>
-
-
-
 
 @endsection

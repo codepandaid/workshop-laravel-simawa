@@ -63,23 +63,23 @@ class InfoMahasiswaController extends Controller
         $InfoMahasiswa->tahun_masuk     = $request->input('tahun_masuk');
         $InfoMahasiswa->ipk             = $request->input('ipk');
         $InfoMahasiswa->spp             = $request->input('spp');
-
+        
         if($request->hasFile('pas_foto')){
             $name = Storage::disk('local')->put('images/pas_foto', $request->pas_foto);
-            $infoMahasiswa->pas_foto = $name;
+            $InfoMahasiswa->pas_foto = $name;
         }
         else{
-            $infoMahasiswa->pas_foto = $infoMahasiswa->pas_foto;
+            $InfoMahasiswa->pas_foto = $InfoMahasiswa->pas_foto;
         }
         if($request->hasFile('transkrip')){
             $name = Storage::disk('local')->put('images/transkrip', $request->transkrip);
-            $infoMahasiswa->transkrip = $name;
+            $InfoMahasiswa->transkrip = $name;
         }
         else{
-            $infoMahasiswa->transkrip = $infoMahasiswa->transkrip;
+            $InfoMahasiswa->transkrip = $InfoMahasiswa->transkrip;
         }
         $InfoMahasiswa->save();
-        return $InfoMahasiswa;
+        return redirect('/dashboard');
     }
 
     public function deleteInfoMahasiswa($id){

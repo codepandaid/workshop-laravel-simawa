@@ -35,4 +35,10 @@ Auth::routes();
 
 Route::get('/home', 'AdminController@index')->name('home');
 Route::post('/info-mahasiswa/post', 'InfoMahasiswaController@addInfoMahasiswa');
-Route::get('/info-mahasiswa/{id}', 'InfoMahasiswController@viewInfoMahasiswa');
+Route::get('/info-mahasiswa/{id}', 'InfoMahasiswaController@viewInfoMahasiswa');
+
+Route::get('/edit-form-1/{id}', 'AdminController@editInfoMahasiswa');
+Route::post('/edit-form-1/{id}', 'InfoMahasiswaController@editInfoMahasiswa');
+
+Route::get('/edit-form-2/{id}', 'AdminController@editInfoKeluarga');
+Route::post('/edit-form-2/{id}', 'InfoKeluargaController@editInfoKeluarga');
