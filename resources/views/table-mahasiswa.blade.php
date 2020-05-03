@@ -25,7 +25,7 @@
             <h5 >Data mahasiswa Penerima Bantuan SPP</h5>
             </div>    
             <div class="add" style="float: right">
-                <a href="#" class="link"><i class="fas fa-plus"></i> Tambah Data</a></li>
+                <a href="{{url('/form-1')}}" class="link"><i class="fas fa-plus"></i> Tambah Data</a></li>
             </div>
         </div>
         <hr style="margin-left: 20px; margin-right:20px">
@@ -34,9 +34,9 @@
 
     </div>
     <div class="table-responsive" style="align-content: center " >
-            <table class="table table-hover " style="margin-left: 20px; margin-right:20px">
-                <thead>
-                    <tr>
+            <table class="table table-hover ">
+                <thead class="thead">
+                    <tr style="text-align: center">
                     <th scope="col">No</th>
                     <th scope="col">Nama Lengkap</th>
                     <th scope="col">Fakultas</th>
@@ -47,13 +47,20 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
-                    <tr></tr>
+                    <tr style="text-align: center" class="table-row" data-href="#">
+                        <th scope="row">1</th>
+                        <td>Afifah Noviani</td>
+                        <td>FMIPA</td>
+                        <td>Ilmu Komputer</td>
+                        <td>2017</td>
+                        <td>4.00</td>
+                        <td>
+                            <a href='#' class="btn btn-info" role="button">Edit</a>
+                            <a href='#' class="btn btn-danger" role="button">Delete</a>
+                        </td>
+
+                    </tr>
+                    
                 </tbody>
             
         </div>

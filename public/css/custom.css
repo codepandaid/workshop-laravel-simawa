@@ -146,3 +146,15 @@
     color: seagreen;
 }
 
+.table-responsive{
+    padding: 20px;
+}
+
+.table-row{
+    cursor:pointer;
+    }
+
+.thead{
+    background-color : #4b4267;
+    color: ivory;
+}
