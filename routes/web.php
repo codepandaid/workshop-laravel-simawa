@@ -24,12 +24,21 @@ Route::get('/dashboard', function () {
 Route::get('/datamahasiswa', function () {
     return view('data-mahasiswa');
 });
+
+//Route::get('/form-1','InfoMahasiswaController@createForm');
+
 Route::get('/form-1', function () {
     return view('form-1');
 });
+
 Route::get('/form-2', function () {
     return view('form-2');
 });
+
+Route::get('/table-mahasiswa', function () {
+    return view('table-mahasiswa');
+});
+
 
 Auth::routes();
 

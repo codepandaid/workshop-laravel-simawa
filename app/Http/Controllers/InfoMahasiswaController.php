@@ -87,4 +87,9 @@ class InfoMahasiswaController extends Controller
         $InfoMahasiswa->delete();
         return redirect('/home');
     }
+
+    //nampilin halaman input form
+    //public function createForm(){ 
+      //  return view('form-1');
+    //}
 }
