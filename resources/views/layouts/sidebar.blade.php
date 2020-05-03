@@ -12,11 +12,6 @@
 
     <!--Page Content-->
     <div class="main-content">
-        <div class="header">
-            <h3>@yield('navbar_title')</h3>
-            <div class="info">
-            </div>
-        </div>
         <div class="content">
          @yield('content')
         </div>

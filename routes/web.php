@@ -31,6 +31,9 @@ Route::get('/form-2', function () {
     return view('form-2');
 });
 
+Route::get('/table-mahasiswa', function () {
+    return view('table-mahasiswa');
+});
 Auth::routes();
 
 Route::get('/home', 'AdminController@index')->name('home');

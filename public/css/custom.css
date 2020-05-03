@@ -73,12 +73,15 @@
 /* Steps */
 
 /* Make circles that indicate the steps of the form: */
+.stepper{
+    padding-top: 50px;    
+}
 .step {
     height: 50px;
     width: 50px;
     margin: 0 10px;
     padding: 10px;
-    background-color: #bbbbbb;
+    background-color:  #594f84;
     border: none;  
     border-radius: 50%;
     display: inline-block;
@@ -135,3 +138,11 @@
     cursor: pointer;
     margin-top: 0.5em;
 }
+
+.nav-link{
+    color: indigo;
+}
+.link{
+    color: seagreen;
+}
+

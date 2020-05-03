@@ -1,21 +1,20 @@
 @extends('layouts.base')
 
-@section('title','Data Mahasiswa')
-@section('navbar_title','Form Input Mahasiswa')
 
 @section('content')
 
-<div style="text-align:center;">
+<div class="stepper" style="text-align:center;">
     <span class="step finish">1</span>
     <span class="step active">2</span>
 </div>
 
 <div class="container">
+    <div class="header">
+            <h4>Informasi Keluarga</h4>
+            <hr>
+        </div>
     <div class="row justify-content-center">
         <div class="col-lg-8 mt-5 mb-5">
-            <h4 class="text-center">
-                Informasi Keluarga
-            </h4>
             <form>
                 <div class="form-group">
                     <label for="namaayah">Nama Ayah Kandung</label>
