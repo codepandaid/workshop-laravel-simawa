@@ -21,7 +21,7 @@ class CreateInfoMahasiswasTable extends Migration
             $table->tinyInteger('fakultas');
             $table->tinyInteger('departemen');
             $table->integer('tahun_masuk');
-            $table->integer('ipk');
+            $table->decimal('ipk', 3, 2);
             $table->string('transkrip');
             $table->integer('spp');
             $table->timestamps();

@@ -9,6 +9,7 @@ class InfoKeluargaController extends Controller
 {
     public function addInfoKeluarga(Request $request){
     	$this->validate($request,[
+            'mahasiswa_id'      => 'required',
             'nama_ayah'         => 'required',
             'nama_ibu'          => 'required',
             'pekerjaan_ayah'    => 'required',
@@ -17,6 +18,7 @@ class InfoKeluargaController extends Controller
             'penghasilan_ibu'   => 'required',
         ]);
         $InfoKeluarga                   = new InfoKeluarga;
+        $InfoKeluarga->mahasiswa_id     = $request->input('mahasiswa_id');
         $InfoKeluarga->nama_ayah        = $request->input('nama_ayah');
         $InfoKeluarga->nama_ibu         = $request->input('nama_ibu');
         $InfoKeluarga->pekerjaan_ayah   = $request->input('pekerjaan_ayah');

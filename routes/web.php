@@ -43,8 +43,18 @@ Route::get('/table-mahasiswa', function () {
 Auth::routes();
 
 Route::get('/home', 'AdminController@index')->name('home');
+
+//route for crud info mahasiswa
 Route::post('/info-mahasiswa/post', 'InfoMahasiswaController@addInfoMahasiswa');
+Route::post('/info-mahasiswa/edit/{id}', 'InfoMahasiswaController@editInfoMahasiswa');
 Route::get('/info-mahasiswa/{id}', 'InfoMahasiswaController@viewInfoMahasiswa');
+Route::get('/info-mahasiswa/delete/{id}', 'InfoMahasiswaController@deleteInfoMahasiswa');
+
+//route for crud info keluarga
+Route::post('/info-keluarga/post', 'InfoKeluargaController@addInfoKeluarga');
+Route::post('/info-keluarga/edit/{id}', 'InfoKeluargaController@editInfoKeluarga');
+Route::get('/info-keluarga/{id}', 'InfoKeluargaController@viewInfoKeluarga');
+Route::get('/info-keluarga/delete/{id}', 'InfoKeluargaController@deleteInfoKeluarga');
 
 Route::get('/edit-form-1/{id}', 'AdminController@editInfoMahasiswa');
 Route::post('/edit-form-1/{id}', 'InfoMahasiswaController@editInfoMahasiswa');

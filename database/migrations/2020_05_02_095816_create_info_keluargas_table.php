@@ -15,6 +15,7 @@ class CreateInfoKeluargasTable extends Migration
     {
         Schema::create('info_keluargas', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('mahasiswa_id')->unsigned();
             $table->string('nama_ayah');
             $table->string('nama_ibu');
             $table->tinyInteger('pekerjaan_ayah');
@@ -22,6 +23,9 @@ class CreateInfoKeluargasTable extends Migration
             $table->bigInteger('penghasilan_ayah');
             $table->bigInteger('penghasilan_ibu');
             $table->timestamps();
+
+            $table->foreign('mahasiswa_id')->references('id')
+                    ->on('info_mahasiswas')->onDelete('cascade');
         });
     }
 
