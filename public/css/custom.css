@@ -59,12 +59,14 @@
     margin-left: 250px;
     width: 100%;
 }
+
 .wrapper .main-content .header{
     padding: 20px;
     background: #FFF;
     color: 7171717;
+}
 
-}.wrapper .main-content .info{
+.wrapper .main-content .info{
     margin: 20px;
     color: 7171717;
     line-height: 25px;
@@ -109,14 +111,14 @@
       background: #7e6da8;
       border-color: #7e6da8;
   }
-  .btn-secondary {
+  /* .btn-secondary {
       background: #999;
       border-color: #999;
   }
   .btn-secondary:hover {
       background: #bbb;
       border-color: #bbb;
-  }
+  } */
 
   .profile-image-input {
       border-radius: 50%;

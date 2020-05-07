@@ -23,6 +23,7 @@ class InfoMahasiswaController extends Controller
         ]);
         $InfoMahasiswa                  = new InfoMahasiswa;
         $InfoMahasiswa->nama_lengkap    = $request->input('nama_lengkap');
+        $InfoMahasiswa->nim             = $request->input('nim');
         $InfoMahasiswa->fakultas        = $request->input('fakultas');
         $InfoMahasiswa->departemen      = $request->input('departemen');
         $InfoMahasiswa->tahun_masuk     = $request->input('tahun_masuk');
@@ -38,7 +39,7 @@ class InfoMahasiswaController extends Controller
             $InfoMahasiswa->transkrip = $name;
         }
         $InfoMahasiswa->save();
-        return $InfoMahasiswa;
+        return redirect('/dashboard');
     }
 
     public function viewInfoMahasiswa($id){

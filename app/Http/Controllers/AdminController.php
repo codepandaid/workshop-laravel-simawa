@@ -13,6 +13,12 @@ class AdminController extends Controller
         return view('home');
     }
 
+    public function addInfoMahasiswa(){
+        $Departemens = \DB::table('departemen_master')->get();
+        $Fakultases   = \DB::table('fakultas_master')->get();
+        return view('form-1', compact('Departemens','Fakultases'));
+    }
+
     public function editInfoMahasiswa($id){
         $InfoMahasiswa = InfoMahasiswa::findOrFail($id);
         return view('edit-form-1', compact('InfoMahasiswa'));

@@ -27,13 +27,6 @@ Route::get('/datamahasiswa', function () {
 
 //Route::get('/form-1','InfoMahasiswaController@createForm');
 
-Route::get('/form-1', function () {
-    return view('form-1');
-});
-
-Route::get('/form-2', function () {
-    return view('form-2');
-});
 
 Route::get('/table-mahasiswa', function () {
     return view('table-mahasiswa');
@@ -61,3 +54,6 @@ Route::post('/edit-form-1/{id}', 'InfoMahasiswaController@editInfoMahasiswa');
 
 Route::get('/edit-form-2/{id}', 'AdminController@editInfoKeluarga');
 Route::post('/edit-form-2/{id}', 'InfoKeluargaController@editInfoKeluarga');
+
+Route::get('/form-1','AdminController@addInfoMahasiswa');
+Route::post('/form-1','InfoMahasiswaController@addInfoMahasiswa');

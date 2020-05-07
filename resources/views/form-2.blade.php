@@ -10,11 +10,11 @@
 
 <div class="container">
     <div class="header">
-            <h4>Informasi Keluarga</h4>
-            <hr>
-        </div>
+        <h4>Informasi Keluarga</h4>
+        <hr>
+    </div>
     <div class="row justify-content-center">
-        <div class="col-lg-8 mt-5 mb-5">
+        <div class="col-lg-8 mb-5">
             <form>
                 <div class="form-group">
                     <label for="namaayah">Nama Ayah Kandung</label>
